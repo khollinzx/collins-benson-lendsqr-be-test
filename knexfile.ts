@@ -6,7 +6,7 @@ import config from './config'
 const Knexfile: { [key: string]: Knex.Config } = {
   development: {
     debug: true,
-    client: "mysql",
+    client: "mysql2",
     connection: {
       host : config.host,
       port : 3306,
@@ -25,7 +25,7 @@ const Knexfile: { [key: string]: Knex.Config } = {
   },
 
   staging: {
-    client: "mysql",
+    client: "mysql2",
     connection: {
       host : config.host,
       port : 3306,
