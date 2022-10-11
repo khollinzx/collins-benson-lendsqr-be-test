@@ -23,8 +23,7 @@ const Knexfile: { [key: string]: Knex.Config } = {
   },
 
   staging: {
-    debug: true,
-    client: "mysql2",
+    client: "mysql",
     connection: {
       database: config.database,
       user: config.username,
