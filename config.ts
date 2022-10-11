@@ -12,5 +12,10 @@ export default {
     username: process.env.DB_USER,
     password: process.env.DB_PWD,
     host: process.env.DB_HOST,
+    testDatabase: process.env.TEST_DB_NAME,
+    testDatabasePort: process.env.TEST_DB_PORT,
+    testUsername: process.env.TEST_DB_USER,
+    testPassword: process.env.TEST_DB_PWD,
+    testHost: process.env.TEST_DB_HOST,
     appName: process.env.APP_NAME
 };

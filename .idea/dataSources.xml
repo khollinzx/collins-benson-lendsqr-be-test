@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://us-cdbr-east-06.cleardb.net:3306/heroku_b8f1cc405ea830d</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="lendsqr_db_test" uuid="418b5b35-b647-4fd4-938d-ab75f6a88f86">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/lendsqr_db_test</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
