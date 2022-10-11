@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test npm run rollback && cross-env NODE_ENV=test npm run migration && cross-env NODE_ENV=test jest _tests_/integrations --detectOpenHandles",
-    "pretest": "cross-env NODE_ENV=test npm run migration jest _tests_/integrations --testTimeout=10000 --detectOpenHandles",
     "dev": "ts-node-dev index.ts",
     "start": "node dist/index.js",
     "build": "tsc",
