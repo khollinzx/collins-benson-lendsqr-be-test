@@ -5,7 +5,7 @@ import {Response, NextFunction} from 'express';
 import config from '../../config';
 import jwt from 'jsonwebtoken';
 import fs from "fs";
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 const saltRounds = 10;
 
 /** *******************************
@@ -118,7 +118,7 @@ export const validateRequest = (object: { files: any; }, res: Response, next: Ne
  */
 export const hashPassword = async (password: string | Buffer) => {
     const salt = await bcrypt.genSalt(saltRounds);
-    return await bcrypt.hashSync(password, salt);
+    return await bcrypt.hashSync(<string>password, salt);
 };
 
 /**
@@ -127,7 +127,7 @@ export const hashPassword = async (password: string | Buffer) => {
  * @param dbPassword
  */
 export const comparePasswords = (inputPassword: string | Buffer, dbPassword: string) => {
-    if (!bcrypt.compareSync(inputPassword, dbPassword)) return false;
+    if (!bcrypt.compareSync(<string>inputPassword, dbPassword)) return false;
 
     return true;
 };
