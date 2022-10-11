@@ -1,0 +1,40 @@
+{
+  "name": "collins-benson-lendsqr-be-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc && knex migrate:latest",
+    "migrate": "knex migrate:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/node": "^18.8.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/ramda": "^0.28.15",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-joi-validation": "^5.0.1",
+    "joi": "^17.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.3.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
+  }
+}
