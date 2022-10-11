@@ -1,16 +1,14 @@
-# collins-benson-lendsqr-be-test
+# Demo Credit
+Demo Credit is a mobile lending app that requires wallet functionality. This is needed as borrowers need a wallet to receive the loans they have been granted and also send the money for repayments.
 
-# Application Description
-Built With
+## Application Description
 
-Build a mini fintech app, where customer can create account, log in, fund their wallet, transfer money to other users, and also make withdrawals.
 This application was built with:
 - NodeJS, 
 - Express, 
 - TypeScript 
 - MySQL2 
 - Knex.JS ORM
-
 
 Trying to get started?
 

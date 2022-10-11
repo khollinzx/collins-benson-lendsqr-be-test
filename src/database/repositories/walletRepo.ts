@@ -3,7 +3,7 @@ import Knex from '../index'
 class WalletRepo {
 
     /**
-     *
+     * create a user wallet
      * @param body
      */
     static async create(body: any) {
@@ -11,7 +11,7 @@ class WalletRepo {
     }
 
     /**
-     *
+     * get a user wallet by user id
      * @param column
      * @param value
      */
@@ -20,7 +20,7 @@ class WalletRepo {
     }
 
     /**
-     *
+     * update a user wallet by user id
      * @param payload
      * @param column
      * @param value

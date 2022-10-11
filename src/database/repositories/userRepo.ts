@@ -1,12 +1,13 @@
 import Knex from '../index'
 
+
 class UserRepo {
 
     /**
-     *
+     * Create a user account
      * @param body
      */
-    static async create(body: any) {
+    static async create(body: object) {
         return await Knex('users').insert(body).then(async () => {
             const result = await Knex.raw('select LAST_INSERT_ID() as id');
             const id = result[0][0].id;
@@ -15,7 +16,7 @@ class UserRepo {
     }
 
     /**
-     *
+     * get a user detail
      * @param column
      * @param value
      */
