@@ -6,7 +6,7 @@ import config from './config'
 const Knexfile: { [key: string]: Knex.Config } = {
   development: {
     debug: true,
-    client: "mysql2",
+    client: "mysql",
     connection: {
       database: config.database,
       user: config.username,
