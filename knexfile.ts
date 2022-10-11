@@ -8,6 +8,8 @@ const Knexfile: { [key: string]: Knex.Config } = {
     debug: true,
     client: "mysql",
     connection: {
+      host : config.host,
+      port : 3306,
       database: config.database,
       user: config.username,
       password: config.password
@@ -25,6 +27,8 @@ const Knexfile: { [key: string]: Knex.Config } = {
   staging: {
     client: "mysql",
     connection: {
+      host : config.host,
+      port : 3306,
       database: config.database,
       user: config.username,
       password: config.password
