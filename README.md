@@ -8,6 +8,7 @@ This application was built with:
 - NodeJS, 
 - Express, 
 - TypeScript 
+- MySQL2 
 - Knex.JS ORM
 
 
