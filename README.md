@@ -31,6 +31,9 @@ Trying to get started?
 - Open the `Knexfile.ts` and edit the test objects section.
 - Run `npm run test` to run the test suite
 
+<img width="1678" alt="ER_Diagram" src="https://user-images.githubusercontent.com/44474846/195743850-c451d6e0-34c1-4784-bb3b-933769c2f4a2.png">
+
+
 
 The Tested implementation was created with
 
