@@ -37,6 +37,10 @@ The Tested implementation was created with
 - Jest
 - Supertest
 
+## Base URL
+The project is hosted on heroku:
+API URL: https://collins-benson-lendsqr-be-test.herokuapp.com/api/v1/
+
 ## E-R Diagram
 
 The ER Diagram for the models can by view on this link <https://dbdiagram.io/d/6345f6ccf0018a1c5fe3044b>
